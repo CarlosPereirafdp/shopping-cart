@@ -44,7 +44,7 @@ public class ShoppingCartService {
         if (user != null && part != null) {
             createCart(user, quantity, part);
         } else {
-            System.out.println("Your name doesnt exist or this part doenst exist in DB!");
+            System.out.println("Your name doesn't exist or this part doesn't exist in DB!");
         }
     }
 

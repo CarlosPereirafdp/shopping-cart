@@ -22,17 +22,17 @@ public class ManufacturerService {
         manufacturer.setName(manufaturerRequest.name());
 
         manufacturerRepository.save(manufacturer);
-        System.out.println("Manufaturer added with success");
+        System.out.println("Manufacturer successfully added");
     }
 
     @Transactional(propagation = Propagation.REQUIRED)
     public void removeManufacturer(String name) {
         Manufacturer manufacturer = manufacturerRepository.findByName(name);
         if (stockRepository.findStockByManufacturerId(manufacturer.getId()) != null) {
-            System.out.println("You cant delete this Manufaturer because they have parts in Stock that are not solded yet");
+            System.out.println("You can't delete this Manufacturer because they have parts in Stock that are not solded yet");
         } else {
             manufacturerRepository.delete(manufacturer);
-            System.out.println("Manufaturer deleted with success");
+            System.out.println("Manufacturer successfully deleted");
         }
     }
 }

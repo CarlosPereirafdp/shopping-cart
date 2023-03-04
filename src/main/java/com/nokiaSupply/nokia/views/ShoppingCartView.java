@@ -53,7 +53,7 @@ public class ShoppingCartView {
         scanner.nextLine();
         System.out.println("Waht is you name?");
         String name = scanner.nextLine();
-        System.out.println("Waht is the name of part you to to buy?");
+        System.out.println("Waht is the name of the part you want to buy?");
         String part = scanner.nextLine();
         System.out.println("Waht is the quantity of parts?");
         Integer quantity = scanner.nextInt();
