@@ -15,7 +15,6 @@ public class ManufacturersView {
 
     public void createLayout() {
 
-
         while (true) {
             System.out.println("\n--- Manufacturers Menu ---");
             System.out.println("1: Add quantity");
@@ -47,7 +46,7 @@ public class ManufacturersView {
         System.out.println("What is the name of the manufacturer?");
         String manufacturerName = scanner.nextLine();
 
-        stockService.listQuantities(partName,manufacturerName);
+        stockService.listQuantities(partName, manufacturerName);
     }
 
     private void addQuantityToStock() {
@@ -59,6 +58,6 @@ public class ManufacturersView {
         System.out.println("What is the quantity?");
         Integer quantity = scanner.nextInt();
 
-        stockService.addQuantity(partName,manufacturerName,quantity);
+        stockService.addQuantity(partName, manufacturerName, quantity);
     }
 }

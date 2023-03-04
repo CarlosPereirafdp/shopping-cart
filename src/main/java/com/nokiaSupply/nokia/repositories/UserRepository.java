@@ -1,6 +1,5 @@
 package com.nokiaSupply.nokia.repositories;
 
-import com.nokiaSupply.nokia.entities.Stock;
 import com.nokiaSupply.nokia.entities.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 

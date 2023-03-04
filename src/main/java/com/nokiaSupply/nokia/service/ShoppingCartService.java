@@ -89,7 +89,7 @@ public class ShoppingCartService {
                 System.out.println(String.format("Your cart have now %d - %s and the amount to pay is %,.2f", shopCart.getPartsQuantity(), part.getName(), shopCart.getTotalPrice()));
                 scanner.nextLine();
             } else {
-                System.out.println("You dont have enghout money or doesn't exist this amount of parts.");
+                System.out.println("You dont have enough money or doesn't exist this amount of parts.");
             }
         } else {
             System.out.println("Doenst have stock with this part, please add stock first.");

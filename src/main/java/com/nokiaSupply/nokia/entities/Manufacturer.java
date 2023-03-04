@@ -7,12 +7,14 @@ import lombok.Setter;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
 @Getter
 @Entity
 @Table(name = "manufacturer")
 public class Manufacturer implements Serializable {
     private static final long serialVersionUID = 1L;
 
+    @Setter
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "manufacturer_id")

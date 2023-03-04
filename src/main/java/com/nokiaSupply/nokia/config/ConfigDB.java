@@ -83,7 +83,7 @@ public class ConfigDB implements CommandLineRunner {
 
             // create Manufacturer and Parts for testing
             Manufacturer manufacturer = new Manufacturer(null, "Nokia");
-            Part part = new Part(null, "Telemovel", manufacturer, 10.0,false);
+            Part part = new Part(null, "Telemovel", manufacturer, 10.0, false);
             manufacturer = manufacturerRepository.save(manufacturer);
             partRepository.save(part);
 
@@ -91,7 +91,7 @@ public class ConfigDB implements CommandLineRunner {
             parts.add(part);
             manufacturer.setPartsList(parts);
 
-            Stock stock = new Stock(null,1,1,10);
+            Stock stock = new Stock(null, 1, 1, 10);
             stockRepository.save(stock);
 
             String createCart = """
@@ -106,7 +106,6 @@ public class ConfigDB implements CommandLineRunner {
                     )
                     """;
             stmt.executeUpdate(createCart);
-
 
 
             System.out.println("Tables created successfully.");

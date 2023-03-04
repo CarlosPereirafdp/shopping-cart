@@ -33,4 +33,12 @@ public class ShopCart implements Serializable {
 
     public ShopCart() {
     }
+
+    public ShopCart(Integer id, Integer partId, Integer manufacturerId, Integer partsQuantity, double totalPrice) {
+        this.id = id;
+        this.partId = partId;
+        this.manufacturerId = manufacturerId;
+        this.partsQuantity = partsQuantity;
+        this.totalPrice = totalPrice;
+    }
 }

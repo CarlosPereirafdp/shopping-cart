@@ -23,4 +23,10 @@ public class User {
 
     public User() {
     }
+
+    public User(Integer id, String name, double budget) {
+        this.id = id;
+        this.name = name;
+        this.budget = budget;
+    }
 }

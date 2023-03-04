@@ -13,6 +13,7 @@ public class ShoppingCartView {
     private final ShoppingCartService shoppingCartService;
 
     private Scanner scanner = new Scanner(System.in);
+
     public void createLayout() {
 
 
@@ -56,7 +57,7 @@ public class ShoppingCartView {
         String part = scanner.nextLine();
         System.out.println("Waht is the quantity of parts?");
         Integer quantity = scanner.nextInt();
-        shoppingCartService.buyParts(name,part,quantity);
+        shoppingCartService.buyParts(name, part, quantity);
     }
 
     private void addMoney() {
@@ -65,6 +66,6 @@ public class ShoppingCartView {
         String name = scanner.nextLine();
         System.out.println("Put the amount of money to add?");
         double money = scanner.nextDouble();
-        shoppingCartService.addMoneyToUser(name,money);
+        shoppingCartService.addMoneyToUser(name, money);
     }
 }

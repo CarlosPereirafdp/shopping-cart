@@ -1,20 +1,13 @@
 package com.nokiaSupply.nokia.views;
 
-import com.nokiaSupply.nokia.entities.Manufacturer;
 import com.nokiaSupply.nokia.entities.transfer.ManufaturerRequest;
 import com.nokiaSupply.nokia.entities.transfer.PartRequest;
-import com.nokiaSupply.nokia.repositories.ManufacturerRepository;
 import com.nokiaSupply.nokia.service.ManufacturerService;
 import com.nokiaSupply.nokia.service.PartService;
-import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
-import java.util.List;
 import java.util.Scanner;
-
 
 
 @Component
@@ -59,7 +52,7 @@ public class DataView {
 
 
     private void addPart() {
-       System.out.println("What is the name of the part?");
+        System.out.println("What is the name of the part?");
         scanner.nextLine();
         String name = scanner.nextLine();
         System.out.println("Put the manufaturer of this part?");
@@ -67,7 +60,7 @@ public class DataView {
         System.out.println("Put the price of this part?");
         double price = scanner.nextDouble();
 
-        PartRequest partRequest = new PartRequest(name, manufacturer,price);
+        PartRequest partRequest = new PartRequest(name, manufacturer, price);
         partService.addPart(partRequest);
         scanner.nextLine();
     }

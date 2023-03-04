@@ -1,6 +1,5 @@
 package com.nokiaSupply.nokia.repositories;
 
-import com.nokiaSupply.nokia.entities.Manufacturer;
 import com.nokiaSupply.nokia.entities.Part;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
